@@ -1,0 +1,10 @@
+---
+- name: install packages
+  become: true
+  hosts: localhost   
+  tasks:
+
+  - name: Update packages
+    yum:
+      name: "*"
+      state: latest
